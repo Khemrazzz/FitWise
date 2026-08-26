@@ -1,0 +1,26 @@
+{
+  "model_name": "Logistic Regression",
+  "model_version": "prototype-0.1.0",
+  "feature_profile": "new_member_safe_v1",
+  "features": [
+    "Age",
+    "Gender",
+    "Weight (kg)",
+    "Height (m)",
+    "Fat_Percentage",
+    "Workout_Frequency (days/week)",
+    "Experience_Level",
+    "BMI"
+  ],
+  "target": "Workout_Type",
+  "classes": [
+    "Cardio",
+    "HIIT",
+    "Strength",
+    "Yoga"
+  ],
+  "random_state": 42,
+  "best_hyperparameters": {
+    "C": 0.1
+  }
+}

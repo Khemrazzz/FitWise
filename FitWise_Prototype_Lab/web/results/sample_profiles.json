@@ -1,0 +1,402 @@
+[
+  {
+    "id": "P01",
+    "description": "Beginner weight loss, home/no equipment",
+    "profile": {
+      "age": 24,
+      "gender": "Female",
+      "weightKg": 72,
+      "heightM": 1.65,
+      "fatPercentage": 30,
+      "workoutFrequency": 3,
+      "experienceLevelNumber": 1,
+      "experienceLevel": "beginner",
+      "bmi": 26.4,
+      "goal": "weight_loss",
+      "daysPerWeek": 3,
+      "sessionDurationMinutes": 30,
+      "equipment": [],
+      "restrictions": []
+    }
+  },
+  {
+    "id": "P02",
+    "description": "Intermediate muscle gain, full gym",
+    "profile": {
+      "age": 28,
+      "gender": "Male",
+      "weightKg": 79,
+      "heightM": 1.78,
+      "fatPercentage": 21,
+      "workoutFrequency": 4,
+      "experienceLevelNumber": 2,
+      "experienceLevel": "intermediate",
+      "bmi": 24.9,
+      "goal": "muscle_gain",
+      "daysPerWeek": 4,
+      "sessionDurationMinutes": 50,
+      "equipment": ["dumbbells", "cable_machine", "lat_pulldown", "leg_press", "barbell", "stationary_bike", "treadmill"],
+      "restrictions": []
+    }
+  },
+  {
+    "id": "P03",
+    "description": "Beginner with knee/high-impact restrictions",
+    "profile": {
+      "age": 42,
+      "gender": "Female",
+      "weightKg": 82,
+      "heightM": 1.68,
+      "fatPercentage": 34,
+      "workoutFrequency": 3,
+      "experienceLevelNumber": 1,
+      "experienceLevel": "beginner",
+      "bmi": 29.1,
+      "goal": "general_fitness",
+      "daysPerWeek": 3,
+      "sessionDurationMinutes": 35,
+      "equipment": ["dumbbells", "stationary_bike"],
+      "restrictions": ["knee_high_load", "avoid_high_impact"]
+    }
+  },
+  {
+    "id": "P04",
+    "description": "Intermediate endurance, home",
+    "profile": {
+      "age": 31,
+      "gender": "Male",
+      "weightKg": 74,
+      "heightM": 1.76,
+      "fatPercentage": 20,
+      "workoutFrequency": 4,
+      "experienceLevelNumber": 2,
+      "experienceLevel": "intermediate",
+      "bmi": 23.9,
+      "goal": "endurance",
+      "daysPerWeek": 4,
+      "sessionDurationMinutes": 45,
+      "equipment": [],
+      "restrictions": []
+    }
+  },
+  {
+    "id": "P05",
+    "description": "Advanced strength with lower-back restriction",
+    "profile": {
+      "age": 36,
+      "gender": "Male",
+      "weightKg": 88,
+      "heightM": 1.82,
+      "fatPercentage": 18,
+      "workoutFrequency": 5,
+      "experienceLevelNumber": 3,
+      "experienceLevel": "advanced",
+      "bmi": 26.6,
+      "goal": "muscle_gain",
+      "daysPerWeek": 5,
+      "sessionDurationMinutes": 60,
+      "equipment": ["dumbbells", "cable_machine", "lat_pulldown", "leg_press", "barbell", "stationary_bike"],
+      "restrictions": ["lower_back_bending"]
+    }
+  },
+  {
+    "id": "P06",
+    "description": "Beginner flexibility, minimal time, no equipment",
+    "profile": {
+      "age": 55,
+      "gender": "Female",
+      "weightKg": 68,
+      "heightM": 1.6,
+      "fatPercentage": 32,
+      "workoutFrequency": 2,
+      "experienceLevelNumber": 1,
+      "experienceLevel": "beginner",
+      "bmi": 26.6,
+      "goal": "flexibility",
+      "daysPerWeek": 2,
+      "sessionDurationMinutes": 20,
+      "equipment": [],
+      "restrictions": []
+    }
+  },
+  {
+    "id": "P07",
+    "description": "Beginner muscle gain, dumbbells only",
+    "profile": {
+      "age": 19,
+      "gender": "Male",
+      "weightKg": 65,
+      "heightM": 1.75,
+      "fatPercentage": 15,
+      "workoutFrequency": 3,
+      "experienceLevelNumber": 1,
+      "experienceLevel": "beginner",
+      "bmi": 21.2,
+      "goal": "muscle_gain",
+      "daysPerWeek": 3,
+      "sessionDurationMinutes": 40,
+      "equipment": ["dumbbells"],
+      "restrictions": []
+    }
+  },
+  {
+    "id": "P08",
+    "description": "Intermediate weight loss, high frequency",
+    "profile": {
+      "age": 33,
+      "gender": "Female",
+      "weightKg": 90,
+      "heightM": 1.7,
+      "fatPercentage": 36,
+      "workoutFrequency": 5,
+      "experienceLevelNumber": 2,
+      "experienceLevel": "intermediate",
+      "bmi": 31.1,
+      "goal": "weight_loss",
+      "daysPerWeek": 5,
+      "sessionDurationMinutes": 45,
+      "equipment": ["dumbbells", "cable_machine"],
+      "restrictions": []
+    }
+  },
+  {
+    "id": "P09",
+    "description": "Intermediate flexibility with lower-back restriction",
+    "profile": {
+      "age": 47,
+      "gender": "Female",
+      "weightKg": 75,
+      "heightM": 1.63,
+      "fatPercentage": 29,
+      "workoutFrequency": 3,
+      "experienceLevelNumber": 2,
+      "experienceLevel": "intermediate",
+      "bmi": 28.2,
+      "goal": "flexibility",
+      "daysPerWeek": 3,
+      "sessionDurationMinutes": 30,
+      "equipment": [],
+      "restrictions": ["lower_back_bending"]
+    }
+  },
+  {
+    "id": "P10",
+    "description": "Advanced endurance, cardio equipment",
+    "profile": {
+      "age": 29,
+      "gender": "Male",
+      "weightKg": 71,
+      "heightM": 1.8,
+      "fatPercentage": 12,
+      "workoutFrequency": 5,
+      "experienceLevelNumber": 3,
+      "experienceLevel": "advanced",
+      "bmi": 21.9,
+      "goal": "endurance",
+      "daysPerWeek": 5,
+      "sessionDurationMinutes": 60,
+      "equipment": ["stationary_bike", "treadmill", "rowing_machine", "elliptical"],
+      "restrictions": []
+    }
+  },
+  {
+    "id": "P11",
+    "description": "Advanced muscle gain, full gym, long session",
+    "profile": {
+      "age": 25,
+      "gender": "Male",
+      "weightKg": 85,
+      "heightM": 1.79,
+      "fatPercentage": 14,
+      "workoutFrequency": 5,
+      "experienceLevelNumber": 3,
+      "experienceLevel": "advanced",
+      "bmi": 26.5,
+      "goal": "muscle_gain",
+      "daysPerWeek": 5,
+      "sessionDurationMinutes": 75,
+      "equipment": ["dumbbells", "cable_machine", "lat_pulldown", "leg_press", "barbell"],
+      "restrictions": []
+    }
+  },
+  {
+    "id": "P12",
+    "description": "Beginner general fitness with knee restriction",
+    "profile": {
+      "age": 60,
+      "gender": "Male",
+      "weightKg": 95,
+      "heightM": 1.74,
+      "fatPercentage": 28,
+      "workoutFrequency": 3,
+      "experienceLevelNumber": 1,
+      "experienceLevel": "beginner",
+      "bmi": 31.4,
+      "goal": "general_fitness",
+      "daysPerWeek": 3,
+      "sessionDurationMinutes": 25,
+      "equipment": [],
+      "restrictions": ["knee_high_load"]
+    }
+  },
+  {
+    "id": "P13",
+    "description": "Intermediate muscle gain with high-impact restriction",
+    "profile": {
+      "age": 38,
+      "gender": "Male",
+      "weightKg": 82,
+      "heightM": 1.77,
+      "fatPercentage": 19,
+      "workoutFrequency": 4,
+      "experienceLevelNumber": 2,
+      "experienceLevel": "intermediate",
+      "bmi": 26.2,
+      "goal": "muscle_gain",
+      "daysPerWeek": 4,
+      "sessionDurationMinutes": 50,
+      "equipment": ["dumbbells", "barbell"],
+      "restrictions": ["avoid_high_impact"]
+    }
+  },
+  {
+    "id": "P14",
+    "description": "Advanced weight loss, full gym, high frequency",
+    "profile": {
+      "age": 34,
+      "gender": "Female",
+      "weightKg": 78,
+      "heightM": 1.69,
+      "fatPercentage": 27,
+      "workoutFrequency": 5,
+      "experienceLevelNumber": 3,
+      "experienceLevel": "advanced",
+      "bmi": 27.3,
+      "goal": "weight_loss",
+      "daysPerWeek": 5,
+      "sessionDurationMinutes": 55,
+      "equipment": ["dumbbells", "cable_machine", "lat_pulldown", "leg_press", "barbell", "treadmill"],
+      "restrictions": []
+    }
+  },
+  {
+    "id": "P15",
+    "description": "Beginner endurance, minimal time, no equipment",
+    "profile": {
+      "age": 21,
+      "gender": "Female",
+      "weightKg": 58,
+      "heightM": 1.62,
+      "fatPercentage": 24,
+      "workoutFrequency": 2,
+      "experienceLevelNumber": 1,
+      "experienceLevel": "beginner",
+      "bmi": 22.1,
+      "goal": "endurance",
+      "daysPerWeek": 2,
+      "sessionDurationMinutes": 20,
+      "equipment": [],
+      "restrictions": []
+    }
+  },
+  {
+    "id": "P16",
+    "description": "Intermediate general fitness with knee restriction",
+    "profile": {
+      "age": 44,
+      "gender": "Male",
+      "weightKg": 89,
+      "heightM": 1.81,
+      "fatPercentage": 25,
+      "workoutFrequency": 4,
+      "experienceLevelNumber": 2,
+      "experienceLevel": "intermediate",
+      "bmi": 27.2,
+      "goal": "general_fitness",
+      "daysPerWeek": 4,
+      "sessionDurationMinutes": 40,
+      "equipment": ["dumbbells", "stationary_bike"],
+      "restrictions": ["knee_high_load"]
+    }
+  },
+  {
+    "id": "P17",
+    "description": "Advanced flexibility with multiple restrictions",
+    "profile": {
+      "age": 50,
+      "gender": "Female",
+      "weightKg": 70,
+      "heightM": 1.66,
+      "fatPercentage": 26,
+      "workoutFrequency": 3,
+      "experienceLevelNumber": 3,
+      "experienceLevel": "advanced",
+      "bmi": 25.4,
+      "goal": "flexibility",
+      "daysPerWeek": 3,
+      "sessionDurationMinutes": 30,
+      "equipment": [],
+      "restrictions": ["lower_back_bending", "avoid_high_impact"]
+    }
+  },
+  {
+    "id": "P18",
+    "description": "Beginner muscle gain, dumbbells only, short session",
+    "profile": {
+      "age": 23,
+      "gender": "Female",
+      "weightKg": 60,
+      "heightM": 1.64,
+      "fatPercentage": 23,
+      "workoutFrequency": 3,
+      "experienceLevelNumber": 1,
+      "experienceLevel": "beginner",
+      "bmi": 22.3,
+      "goal": "muscle_gain",
+      "daysPerWeek": 3,
+      "sessionDurationMinutes": 35,
+      "equipment": ["dumbbells"],
+      "restrictions": []
+    }
+  },
+  {
+    "id": "P19",
+    "description": "Intermediate endurance with high-impact restriction",
+    "profile": {
+      "age": 40,
+      "gender": "Male",
+      "weightKg": 80,
+      "heightM": 1.75,
+      "fatPercentage": 22,
+      "workoutFrequency": 5,
+      "experienceLevelNumber": 2,
+      "experienceLevel": "intermediate",
+      "bmi": 26.1,
+      "goal": "endurance",
+      "daysPerWeek": 5,
+      "sessionDurationMinutes": 45,
+      "equipment": ["treadmill", "rowing_machine", "elliptical"],
+      "restrictions": ["avoid_high_impact"]
+    }
+  },
+  {
+    "id": "P20",
+    "description": "Advanced general fitness, full gym plus cardio",
+    "profile": {
+      "age": 27,
+      "gender": "Male",
+      "weightKg": 76,
+      "heightM": 1.78,
+      "fatPercentage": 16,
+      "workoutFrequency": 4,
+      "experienceLevelNumber": 3,
+      "experienceLevel": "advanced",
+      "bmi": 24.0,
+      "goal": "general_fitness",
+      "daysPerWeek": 4,
+      "sessionDurationMinutes": 50,
+      "equipment": ["dumbbells", "cable_machine", "barbell", "treadmill", "stationary_bike"],
+      "restrictions": []
+    }
+  }
+]

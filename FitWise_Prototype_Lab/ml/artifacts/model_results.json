@@ -1,0 +1,245 @@
+{
+  "feature_profile": "new_member_safe_v1",
+  "features": [
+    "Age",
+    "Gender",
+    "Weight (kg)",
+    "Height (m)",
+    "Fat_Percentage",
+    "Workout_Frequency (days/week)",
+    "Experience_Level",
+    "BMI"
+  ],
+  "target": "Workout_Type",
+  "train_rows": 778,
+  "test_rows": 195,
+  "selection_metric": "5-fold CV macro F1 (best hyperparameter combination per model via GridSearchCV)",
+  "selected_model": "Logistic Regression",
+  "selected_model_best_params": {
+    "C": 0.1
+  },
+  "models": [
+    {
+      "model": "Baseline (majority class)",
+      "best_params": {},
+      "cv_macro_f1_mean": null,
+      "cv_macro_f1_std": null,
+      "test_accuracy": 0.2667,
+      "test_macro_precision": 0.0667,
+      "test_macro_recall": 0.25,
+      "test_macro_f1": 0.1053,
+      "candidates_evaluated": 1,
+      "tuning_seconds": 0.0
+    },
+    {
+      "model": "Logistic Regression",
+      "param_grid": {
+        "model__C": [
+          0.01,
+          0.1,
+          1,
+          10
+        ]
+      },
+      "best_params": {
+        "C": 0.1
+      },
+      "cv_macro_f1_mean": 0.2809,
+      "cv_macro_f1_std": 0.0265,
+      "test_accuracy": 0.241,
+      "test_macro_precision": 0.2269,
+      "test_macro_recall": 0.2332,
+      "test_macro_f1": 0.2185,
+      "candidates_evaluated": 4,
+      "tuning_seconds": 14.068
+    },
+    {
+      "model": "Decision Tree",
+      "param_grid": {
+        "model__max_depth": [
+          3,
+          5,
+          7,
+          null
+        ],
+        "model__min_samples_leaf": [
+          1,
+          2,
+          5
+        ]
+      },
+      "best_params": {
+        "max_depth": 7,
+        "min_samples_leaf": 5
+      },
+      "cv_macro_f1_mean": 0.2378,
+      "cv_macro_f1_std": 0.0385,
+      "test_accuracy": 0.2308,
+      "test_macro_precision": 0.2225,
+      "test_macro_recall": 0.2278,
+      "test_macro_f1": 0.2075,
+      "candidates_evaluated": 12,
+      "tuning_seconds": 0.59
+    },
+    {
+      "model": "Random Forest",
+      "param_grid": {
+        "model__n_estimators": [
+          200,
+          400
+        ],
+        "model__max_depth": [
+          null,
+          10,
+          20
+        ],
+        "model__min_samples_leaf": [
+          1,
+          2
+        ]
+      },
+      "best_params": {
+        "max_depth": 10,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      "cv_macro_f1_mean": 0.2575,
+      "cv_macro_f1_std": 0.0309,
+      "test_accuracy": 0.2154,
+      "test_macro_precision": 0.2215,
+      "test_macro_recall": 0.2144,
+      "test_macro_f1": 0.216,
+      "candidates_evaluated": 12,
+      "tuning_seconds": 28.663
+    },
+    {
+      "model": "Support Vector Machine",
+      "param_grid": {
+        "model__C": [
+          0.1,
+          1,
+          10
+        ],
+        "model__gamma": [
+          "scale",
+          "auto"
+        ]
+      },
+      "best_params": {
+        "C": 10,
+        "gamma": "auto"
+      },
+      "cv_macro_f1_mean": 0.2778,
+      "cv_macro_f1_std": 0.037,
+      "test_accuracy": 0.2205,
+      "test_macro_precision": 0.2213,
+      "test_macro_recall": 0.2222,
+      "test_macro_f1": 0.2217,
+      "candidates_evaluated": 6,
+      "tuning_seconds": 2.549
+    },
+    {
+      "model": "Gradient Boosting",
+      "param_grid": {
+        "model__n_estimators": [
+          100,
+          200
+        ],
+        "model__learning_rate": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "model__max_depth": [
+          2,
+          3
+        ]
+      },
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "n_estimators": 100
+      },
+      "cv_macro_f1_mean": 0.2578,
+      "cv_macro_f1_std": 0.0424,
+      "test_accuracy": 0.1897,
+      "test_macro_precision": 0.1636,
+      "test_macro_recall": 0.1823,
+      "test_macro_f1": 0.1643,
+      "candidates_evaluated": 12,
+      "tuning_seconds": 16.634
+    }
+  ],
+  "classification_report": {
+    "Cardio": {
+      "precision": 0.25333333333333335,
+      "recall": 0.37254901960784315,
+      "f1-score": 0.30158730158730157,
+      "support": 51.0
+    },
+    "HIIT": {
+      "precision": 0.2,
+      "recall": 0.06818181818181818,
+      "f1-score": 0.1016949152542373,
+      "support": 44.0
+    },
+    "Strength": {
+      "precision": 0.29508196721311475,
+      "recall": 0.34615384615384615,
+      "f1-score": 0.3185840707964602,
+      "support": 52.0
+    },
+    "Yoga": {
+      "precision": 0.1590909090909091,
+      "recall": 0.14583333333333334,
+      "f1-score": 0.15217391304347827,
+      "support": 48.0
+    },
+    "accuracy": 0.24102564102564103,
+    "macro avg": {
+      "precision": 0.2268765524093393,
+      "recall": 0.23317950431921022,
+      "f1-score": 0.21851005017036934,
+      "support": 195.0
+    },
+    "weighted avg": {
+      "precision": 0.22923397913561847,
+      "recall": 0.24102564102564103,
+      "f1-score": 0.22423717004944468,
+      "support": 195.0
+    }
+  },
+  "confusion_matrix_labels": [
+    "Cardio",
+    "HIIT",
+    "Strength",
+    "Yoga"
+  ],
+  "confusion_matrix": [
+    [
+      19,
+      2,
+      14,
+      16
+    ],
+    [
+      17,
+      3,
+      12,
+      12
+    ],
+    [
+      20,
+      5,
+      18,
+      9
+    ],
+    [
+      19,
+      5,
+      17,
+      7
+    ]
+  ],
+  "important_note": "Prototype performance may be modest because the dataset records workouts performed, not necessarily expert-labelled optimal workout recommendations. Do not describe Workout_Type as a clinical ground-truth recommendation without evidence."
+}
