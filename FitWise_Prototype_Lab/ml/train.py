@@ -94,11 +94,11 @@ def candidate_models():
     """
     return {
         "Logistic Regression": (
-            LogisticRegression(max_iter=2000, random_state=RANDOM_STATE),
+            LogisticRegression(max_iter=2000, class_weight="balanced", random_state=RANDOM_STATE),
             {"model__C": [0.01, 0.1, 1, 10]},
         ),
         "Decision Tree": (
-            DecisionTreeClassifier(random_state=RANDOM_STATE),
+            DecisionTreeClassifier(class_weight="balanced", random_state=RANDOM_STATE),
             {"model__max_depth": [3, 5, 7, None], "model__min_samples_leaf": [1, 2, 5]},
         ),
         "Random Forest": (

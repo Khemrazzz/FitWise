@@ -3,485 +3,764 @@
     "id": "P01",
     "description": "Beginner weight loss, home/no equipment",
     "prediction": {
-      "category": "Cardio",
-      "confidence": 0.3602,
+      "predictedWorkoutType": "Cardio",
+      "confidence": 0.3452,
       "probabilities": {
-        "Cardio": 0.3602,
-        "HIIT": 0.2225,
-        "Strength": 0.2535,
-        "Yoga": 0.1639
-      }
+        "Cardio": 0.3452,
+        "HIIT": 0.2463,
+        "Strength": 0.2409,
+        "Yoga": 0.1676
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 76,
+      "totalChecks": 76,
       "violations": [],
-      "latencyMs": 0.2
+      "latencyMs": 1.63
     },
     "gemini": {
-      "valid": false,
-      "score": 92.38,
-      "violations": [
-        "Low-Impact Step Jacks has an out-of-range sets value (30200).",
-        "Bodyweight Squat has an out-of-range sets value (30200).",
-        "Incline Push-Up has an out-of-range sets value (30200).",
-        "Low-Impact Step Jacks has an out-of-range sets value (30200).",
-        "Glute Bridge has an out-of-range sets value (30200).",
-        "Bird Dog has an out-of-range sets value (30200).",
-        "Low-Impact Step Jacks has an out-of-range sets value (30200).",
-        "Plank has an out-of-range sets value (30200)."
-      ],
-      "latencyMs": 19203.92
+      "valid": true,
+      "score": 100,
+      "checksPassed": 113,
+      "totalChecks": 113,
+      "violations": [],
+      "latencyMs": 15775.82
     }
   },
   {
     "id": "P02",
     "description": "Intermediate muscle gain, full gym",
     "prediction": {
-      "category": "Strength",
-      "confidence": 0.2826,
+      "predictedWorkoutType": "Yoga",
+      "confidence": 0.2701,
       "probabilities": {
-        "Cardio": 0.2355,
-        "HIIT": 0.2167,
-        "Strength": 0.2826,
-        "Yoga": 0.2651
-      }
+        "Cardio": 0.2251,
+        "HIIT": 0.2379,
+        "Strength": 0.267,
+        "Yoga": 0.2701
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 173,
+      "totalChecks": 173,
       "violations": [],
-      "latencyMs": 0.07
+      "latencyMs": 0.28
     },
     "gemini": {
-      "valid": false,
-      "score": 72.73,
-      "violations": [
-        "Expected 4 workout days but received 1.",
-        "Day 1 contains too few exercises.",
-        "Dumbbell Chest Press has an out-of-range sets value (401211122110200)."
-      ],
-      "latencyMs": 20123.98
+      "valid": true,
+      "score": 100,
+      "checksPassed": 154,
+      "totalChecks": 154,
+      "violations": [],
+      "latencyMs": 18114.73
     }
   },
   {
     "id": "P03",
     "description": "Beginner with knee/high-impact restrictions",
     "prediction": {
-      "category": "Cardio",
-      "confidence": 0.3502,
+      "predictedWorkoutType": "Cardio",
+      "confidence": 0.3361,
       "probabilities": {
-        "Cardio": 0.3502,
-        "HIIT": 0.2104,
-        "Strength": 0.2704,
-        "Yoga": 0.169
-      }
+        "Cardio": 0.3361,
+        "HIIT": 0.2332,
+        "Strength": 0.2573,
+        "Yoga": 0.1733
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 78,
+      "totalChecks": 78,
       "violations": [],
-      "latencyMs": 0.06
+      "latencyMs": 0.16
     },
     "gemini": {
       "valid": false,
-      "score": 98,
+      "score": 93.26,
+      "checksPassed": 83,
+      "totalChecks": 89,
       "violations": [
-        "Plank has an out-of-range sets value (30).",
-        "Bird Dog has an out-of-range sets value (30)."
+        "Dumbbell Chest Press has an out-of-range sets value (3012).",
+        "Standing Dumbbell Row has an out-of-range sets value (3012).",
+        "Glute Bridge has an out-of-range sets value (3015).",
+        "Bird Dog has an out-of-range sets value (3010).",
+        "Seated Dumbbell Shoulder Press has an out-of-range sets value (3010).",
+        "Incline Push-Up has an out-of-range sets value (3010)."
       ],
-      "latencyMs": 26938.12
+      "latencyMs": 18117.35
     }
   },
   {
     "id": "P04",
     "description": "Intermediate endurance, home",
     "prediction": {
-      "category": "Strength",
-      "confidence": 0.2863,
+      "predictedWorkoutType": "Yoga",
+      "confidence": 0.2756,
       "probabilities": {
-        "Cardio": 0.2236,
-        "HIIT": 0.2194,
-        "Strength": 0.2863,
-        "Yoga": 0.2707
-      }
+        "Cardio": 0.2136,
+        "HIIT": 0.2406,
+        "Strength": 0.2702,
+        "Yoga": 0.2756
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 160,
+      "totalChecks": 160,
       "violations": [],
-      "latencyMs": 0.11
+      "latencyMs": 0.16
     },
     "gemini": {
       "valid": false,
-      "score": 72.73,
+      "score": 97.01,
+      "checksPassed": 130,
+      "totalChecks": 134,
       "violations": [
-        "Expected 4 workout days but received 1.",
-        "Day 1 contains too few exercises.",
-        "Incline Push-Up has an out-of-range sets value (Infinity)."
+        "Plank has an out-of-range sets value (30).",
+        "Bodyweight Squat has an out-of-range sets value (3000).",
+        "Incline Push-Up has an out-of-range sets value (3000).",
+        "Glute Bridge has an out-of-range sets value (3000)."
       ],
-      "latencyMs": 19680.12
+      "latencyMs": 17345.5
     }
   },
   {
     "id": "P05",
     "description": "Advanced strength with lower-back restriction",
     "prediction": {
-      "category": "Yoga",
-      "confidence": 0.2989
+      "predictedWorkoutType": "Yoga",
+      "confidence": 0.3033,
+      "probabilities": {
+        "Cardio": 0.1811,
+        "HIIT": 0.2487,
+        "Strength": 0.2669,
+        "Yoga": 0.3033
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
-    "error": "compare: {\"error\":\"Expected ',' or '}' after property value in JSON at position 63241 (line 16 column 62481)\"}"
+    "ruleBased": {
+      "valid": true,
+      "score": 100,
+      "checksPassed": 210,
+      "totalChecks": 210,
+      "violations": [],
+      "latencyMs": 0.23
+    },
+    "gemini": {
+      "valid": false,
+      "score": 97.01,
+      "checksPassed": 162,
+      "totalChecks": 167,
+      "violations": [
+        "Bird Dog has an out-of-range sets value (Infinity).",
+        "Bird Dog has an out-of-range sets value (Infinity).",
+        "Lat Pulldown has an out-of-range sets value (Infinity).",
+        "Seated Cable Row has an out-of-range sets value (Infinity).",
+        "Bird Dog has an out-of-range sets value (Infinity)."
+      ],
+      "latencyMs": 115609.57
+    }
   },
   {
     "id": "P06",
     "description": "Beginner flexibility, minimal time, no equipment",
     "prediction": {
-      "category": "Cardio",
-      "confidence": 0.3168,
+      "predictedWorkoutType": "Cardio",
+      "confidence": 0.3021,
       "probabilities": {
-        "Cardio": 0.3168,
-        "HIIT": 0.2325,
-        "Strength": 0.2472,
-        "Yoga": 0.2035
-      }
+        "Cardio": 0.3021,
+        "HIIT": 0.2563,
+        "Strength": 0.2339,
+        "Yoga": 0.2078
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 35,
+      "totalChecks": 35,
       "violations": [],
-      "latencyMs": 0.06
+      "latencyMs": 0.17
     },
     "gemini": {
       "valid": true,
       "score": 100,
+      "checksPassed": 45,
+      "totalChecks": 45,
       "violations": [],
-      "latencyMs": 18240.86
+      "latencyMs": 17138.77
     }
   },
   {
     "id": "P07",
     "description": "Beginner muscle gain, dumbbells only",
     "prediction": {
-      "category": "Cardio",
-      "confidence": 0.2747,
+      "predictedWorkoutType": "HIIT",
+      "confidence": 0.2701,
       "probabilities": {
-        "Cardio": 0.2747,
-        "HIIT": 0.2462,
-        "Strength": 0.2406,
-        "Yoga": 0.2385
-      }
+        "Cardio": 0.2614,
+        "HIIT": 0.2701,
+        "Strength": 0.2267,
+        "Yoga": 0.2419
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 107,
+      "totalChecks": 107,
       "violations": [],
-      "latencyMs": 0.13
+      "latencyMs": 3.59
     },
     "gemini": {
       "valid": false,
-      "score": 92.73,
+      "score": 72.73,
+      "checksPassed": 8,
+      "totalChecks": 11,
       "violations": [
-        "Goblet Squat has an out-of-range sets value (3012).",
-        "Dumbbell Chest Press has an out-of-range sets value (3012).",
-        "Standing Dumbbell Row has an out-of-range sets value (3012).",
-        "Seated Dumbbell Shoulder Press has an out-of-range sets value (3010).",
-        "Glute Bridge has an out-of-range sets value (3012).",
-        "Goblet Squat has an out-of-range sets value (3010).",
-        "Incline Push-Up has an out-of-range sets value (3010).",
-        "Standing Dumbbell Row has an out-of-range sets value (3010)."
+        "Expected 3 workout days but received 1.",
+        "Day 1 contains too few exercises.",
+        "Low-Impact Step Jacks has an out-of-range sets value (Infinity)."
       ],
-      "latencyMs": 40863.81
+      "latencyMs": 24969.87
     }
   },
   {
     "id": "P08",
     "description": "Intermediate weight loss, high frequency",
     "prediction": {
-      "category": "Strength",
-      "confidence": 0.347,
+      "predictedWorkoutType": "Strength",
+      "confidence": 0.3313,
       "probabilities": {
-        "Cardio": 0.3026,
-        "HIIT": 0.1871,
-        "Strength": 0.347,
-        "Yoga": 0.1633
-      }
+        "Cardio": 0.2926,
+        "HIIT": 0.2079,
+        "Strength": 0.3313,
+        "Yoga": 0.1681
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 211,
+      "totalChecks": 211,
       "violations": [],
-      "latencyMs": 0.12
+      "latencyMs": 2.06
     },
     "gemini": {
       "valid": false,
-      "score": 72.73,
+      "score": 76.47,
+      "checksPassed": 13,
+      "totalChecks": 17,
       "violations": [
         "Expected 5 workout days but received 1.",
-        "Day 1 contains too few exercises.",
-        "Dumbbell Chest Press has an out-of-range sets value (Infinity)."
+        "Day 1 contains duplicate exercise IDs.",
+        "Dumbbell Chest Press has an out-of-range sets value (3020084518000).",
+        "Dumbbell Chest Press has an out-of-range sets value (3020084518000)."
       ],
-      "latencyMs": 46223.8
+      "latencyMs": 13601.26
     }
   },
   {
     "id": "P09",
     "description": "Intermediate flexibility with lower-back restriction",
     "prediction": {
-      "category": "Cardio",
-      "confidence": 0.2862,
+      "predictedWorkoutType": "Cardio",
+      "confidence": 0.2721,
       "probabilities": {
-        "Cardio": 0.2862,
-        "HIIT": 0.2454,
-        "Strength": 0.2463,
-        "Yoga": 0.222
-      }
+        "Cardio": 0.2721,
+        "HIIT": 0.2696,
+        "Strength": 0.2325,
+        "Yoga": 0.2258
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 76,
+      "totalChecks": 76,
       "violations": [],
-      "latencyMs": 0.05
+      "latencyMs": 3.15
     },
     "gemini": {
       "valid": false,
-      "score": 88.24,
+      "score": 98.11,
+      "checksPassed": 104,
+      "totalChecks": 106,
       "violations": [
-        "Expected 3 workout days but received 1.",
-        "Low-Impact Step Jacks has an out-of-range sets value (3e+99)."
+        "Low-Impact Step Jacks has an out-of-range sets value (30).",
+        "Glute Bridge has an out-of-range sets value (30)."
       ],
-      "latencyMs": 28665.29
+      "latencyMs": 23476.93
     }
   },
   {
     "id": "P10",
     "description": "Advanced endurance, cardio equipment",
     "prediction": {
-      "category": "Yoga",
-      "confidence": 0.3097,
+      "predictedWorkoutType": "Yoga",
+      "confidence": 0.313,
       "probabilities": {
-        "Cardio": 0.1735,
-        "HIIT": 0.246,
-        "Strength": 0.2709,
-        "Yoga": 0.3097
-      }
+        "Cardio": 0.1646,
+        "HIIT": 0.2683,
+        "Strength": 0.2541,
+        "Yoga": 0.313
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 201,
+      "totalChecks": 201,
       "violations": [],
-      "latencyMs": 0.06
+      "latencyMs": 0.17
     },
     "gemini": {
       "valid": false,
-      "score": 88.89,
+      "score": 97.54,
+      "checksPassed": 198,
+      "totalChecks": 203,
       "violations": [
-        "Expected 5 workout days but received 1.",
-        "Warrior II has an out-of-range sets value (3e+307)."
+        "Bird Dog has an out-of-range sets value (30).",
+        "Glute Bridge has an out-of-range sets value (30).",
+        "Bird Dog has an out-of-range sets value (30).",
+        "Bird Dog has an out-of-range sets value (30).",
+        "Glute Bridge has an out-of-range sets value (30)."
       ],
-      "latencyMs": 21454.73
+      "latencyMs": 20820.85
     }
   },
   {
     "id": "P11",
     "description": "Advanced muscle gain, full gym, long session",
     "prediction": {
-      "category": "Yoga",
-      "confidence": 0.2888,
+      "predictedWorkoutType": "Yoga",
+      "confidence": 0.292,
       "probabilities": {
-        "Cardio": 0.2012,
-        "HIIT": 0.2482,
-        "Strength": 0.2618,
-        "Yoga": 0.2888
-      }
+        "Cardio": 0.1911,
+        "HIIT": 0.271,
+        "Strength": 0.2459,
+        "Yoga": 0.292
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 215,
+      "totalChecks": 215,
       "violations": [],
-      "latencyMs": 0.06
+      "latencyMs": 0.16
     },
     "gemini": {
-      "valid": true,
-      "score": 100,
-      "violations": [],
-      "latencyMs": 33636.63
+      "valid": false,
+      "score": 82.61,
+      "checksPassed": 19,
+      "totalChecks": 23,
+      "violations": [
+        "Expected 5 workout days but received 1.",
+        "Day 1 contains duplicate exercise IDs.",
+        "Leg Press has an out-of-range sets value (451000).",
+        "Leg Press has an out-of-range sets value (40000)."
+      ],
+      "latencyMs": 18961.57
     }
   },
   {
     "id": "P12",
     "description": "Beginner general fitness with knee restriction",
     "prediction": {
-      "category": "Strength",
-      "confidence": 0.2853,
+      "predictedWorkoutType": "Strength",
+      "confidence": 0.2703,
       "probabilities": {
-        "Cardio": 0.275,
-        "HIIT": 0.2042,
-        "Strength": 0.2853,
-        "Yoga": 0.2354
-      }
+        "Cardio": 0.2636,
+        "HIIT": 0.2251,
+        "Strength": 0.2703,
+        "Yoga": 0.241
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 68,
+      "totalChecks": 68,
       "violations": [],
-      "latencyMs": 0.04
+      "latencyMs": 0.1
     },
     "gemini": {
       "valid": false,
-      "score": 90.1,
+      "score": 83.33,
+      "checksPassed": 20,
+      "totalChecks": 24,
       "violations": [
-        "Incline Push-Up has an out-of-range sets value (3012).",
-        "Glute Bridge has an out-of-range sets value (3012).",
-        "Plank has an out-of-range sets value (3012).",
-        "Low-Impact Step Jacks has an out-of-range sets value (3012).",
-        "Incline Push-Up has an out-of-range sets value (3012).",
-        "Glute Bridge has an out-of-range sets value (3012).",
-        "Bird Dog has an out-of-range sets value (3012).",
-        "Glute Bridge has an out-of-range sets value (3012).",
-        "Plank has an out-of-range sets value (3012).",
-        "Bird Dog has an out-of-range sets value (3012)."
+        "Expected 3 workout days but received 1.",
+        "Day 1 contains duplicate exercise IDs.",
+        "Incline Push-Up has an out-of-range sets value (302).",
+        "Incline Push-Up has an out-of-range sets value (302)."
       ],
-      "latencyMs": 17740.92
+      "latencyMs": 18234.17
     }
   },
   {
     "id": "P13",
     "description": "Intermediate muscle gain with high-impact restriction",
     "prediction": {
-      "category": "Strength",
-      "confidence": 0.2735,
+      "predictedWorkoutType": "Yoga",
+      "confidence": 0.2731,
       "probabilities": {
-        "Cardio": 0.2273,
-        "HIIT": 0.2305,
-        "Strength": 0.2735,
-        "Yoga": 0.2687
-      }
+        "Cardio": 0.2166,
+        "HIIT": 0.2526,
+        "Strength": 0.2577,
+        "Yoga": 0.2731
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 173,
+      "totalChecks": 173,
       "violations": [],
-      "latencyMs": 0.05
+      "latencyMs": 0.35
     },
     "gemini": {
       "valid": false,
-      "score": 90.79,
+      "score": 84,
+      "checksPassed": 21,
+      "totalChecks": 25,
       "violations": [
-        "Dumbbell Chest Press has an out-of-range sets value (4010).",
-        "Standing Dumbbell Row has an out-of-range sets value (4010).",
-        "Seated Dumbbell Shoulder Press has an out-of-range sets value (3012).",
-        "Incline Push-Up has an out-of-range sets value (3012).",
-        "Goblet Squat has an out-of-range sets value (4010).",
-        "Romanian Deadlift has an out-of-range sets value (4010).",
-        "Glute Bridge has an out-of-range sets value (3012).",
-        "Dumbbell Chest Press has an out-of-range sets value (4010).",
-        "Standing Dumbbell Row has an out-of-range sets value (4010).",
-        "Seated Dumbbell Shoulder Press has an out-of-range sets value (3010).",
-        "Romanian Deadlift has an out-of-range sets value (4010).",
-        "Goblet Squat has an out-of-range sets value (4010).",
-        "Bodyweight Squat has an out-of-range sets value (3015).",
-        "Glute Bridge has an out-of-range sets value (3015)."
+        "Expected 4 workout days but received 1.",
+        "Day 1 contains duplicate exercise IDs.",
+        "Dumbbell Chest Press has an out-of-range sets value (302).",
+        "Dumbbell Chest Press has an out-of-range sets value (301)."
       ],
-      "latencyMs": 19139.74
+      "latencyMs": 18608.08
     }
   },
   {
     "id": "P14",
     "description": "Advanced weight loss, full gym, high frequency",
     "prediction": {
-      "category": "Strength",
-      "confidence": 0.3011,
+      "predictedWorkoutType": "Strength",
+      "confidence": 0.2846,
       "probabilities": {
-        "Cardio": 0.2403,
-        "HIIT": 0.2351,
-        "Strength": 0.3011,
-        "Yoga": 0.2235
-      }
+        "Cardio": 0.2295,
+        "HIIT": 0.2584,
+        "Strength": 0.2846,
+        "Yoga": 0.2275
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 212,
+      "totalChecks": 212,
       "violations": [],
-      "latencyMs": 0.06
+      "latencyMs": 0.19
     },
     "gemini": {
-      "valid": true,
-      "score": 100,
-      "violations": [],
-      "latencyMs": 31944.92
+      "valid": false,
+      "score": 93.75,
+      "checksPassed": 45,
+      "totalChecks": 48,
+      "violations": [
+        "Expected 5 workout days but received 2.",
+        "Day 1 contains too few exercises.",
+        "Leg Press has an out-of-range sets value (Infinity)."
+      ],
+      "latencyMs": 115333.24
     }
   },
   {
     "id": "P15",
     "description": "Beginner endurance, minimal time, no equipment",
     "prediction": {
-      "category": "Cardio",
-      "confidence": 0.3441,
+      "predictedWorkoutType": "Cardio",
+      "confidence": 0.3267,
       "probabilities": {
-        "Cardio": 0.3441,
-        "HIIT": 0.2609,
-        "Strength": 0.2049,
-        "Yoga": 0.1902
-      }
+        "Cardio": 0.3267,
+        "HIIT": 0.2869,
+        "Strength": 0.1934,
+        "Yoga": 0.193
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
     "ruleBased": {
       "valid": true,
       "score": 100,
+      "checksPassed": 35,
+      "totalChecks": 35,
       "violations": [],
-      "latencyMs": 0.09
+      "latencyMs": 0.14
     },
     "gemini": {
       "valid": false,
       "score": 97.83,
+      "checksPassed": 45,
+      "totalChecks": 46,
       "violations": [
-        "Bodyweight Squat has an out-of-range sets value (3012)."
+        "Glute Bridge has an out-of-range sets value (30)."
       ],
-      "latencyMs": 17456.41
+      "latencyMs": 12174.46
     }
   },
   {
     "id": "P16",
     "description": "Intermediate general fitness with knee restriction",
     "prediction": {
-      "category": "Strength",
-      "confidence": 0.2982
+      "predictedWorkoutType": "Strength",
+      "confidence": 0.282,
+      "probabilities": {
+        "Cardio": 0.2182,
+        "HIIT": 0.2236,
+        "Strength": 0.282,
+        "Yoga": 0.2762
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
-    "error": "compare: {\"error\":\"429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 30.362284559s.\"}"
+    "ruleBased": {
+      "valid": true,
+      "score": 100,
+      "checksPassed": 143,
+      "totalChecks": 143,
+      "violations": [],
+      "latencyMs": 0.17
+    },
+    "gemini": {
+      "valid": true,
+      "score": 100,
+      "checksPassed": 185,
+      "totalChecks": 185,
+      "violations": [],
+      "latencyMs": 22941.21
+    }
   },
   {
     "id": "P17",
     "description": "Advanced flexibility with multiple restrictions",
     "prediction": {
-      "category": "Yoga",
-      "confidence": 0.2907
+      "predictedWorkoutType": "Yoga",
+      "confidence": 0.2937,
+      "probabilities": {
+        "Cardio": 0.2124,
+        "HIIT": 0.2852,
+        "Strength": 0.2087,
+        "Yoga": 0.2937
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
-    "error": "compare: {\"error\":\"429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 21.548222384s.\"}"
+    "ruleBased": {
+      "valid": true,
+      "score": 100,
+      "checksPassed": 73,
+      "totalChecks": 73,
+      "violations": [],
+      "latencyMs": 0.12
+    },
+    "gemini": {
+      "valid": false,
+      "score": 98.33,
+      "checksPassed": 118,
+      "totalChecks": 120,
+      "violations": [
+        "Bird Dog has an out-of-range sets value (3012).",
+        "Glute Bridge has an out-of-range sets value (3012)."
+      ],
+      "latencyMs": 24633.7
+    }
   },
   {
     "id": "P18",
     "description": "Beginner muscle gain, dumbbells only, short session",
     "prediction": {
-      "category": "Cardio",
-      "confidence": 0.329
+      "predictedWorkoutType": "Cardio",
+      "confidence": 0.3133,
+      "probabilities": {
+        "Cardio": 0.3133,
+        "HIIT": 0.2823,
+        "Strength": 0.2267,
+        "Yoga": 0.1777
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
-    "error": "compare: {\"error\":\"429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 12.657031995s.\"}"
+    "ruleBased": {
+      "valid": true,
+      "score": 100,
+      "checksPassed": 87,
+      "totalChecks": 87,
+      "violations": [],
+      "latencyMs": 0.13
+    },
+    "gemini": {
+      "valid": false,
+      "score": 90.65,
+      "checksPassed": 97,
+      "totalChecks": 107,
+      "violations": [
+        "Goblet Squat has an out-of-range sets value (3012).",
+        "Dumbbell Chest Press has an out-of-range sets value (3010).",
+        "Standing Dumbbell Row has an out-of-range sets value (3010).",
+        "Low-Impact Step Jacks has an out-of-range sets value (3015).",
+        "Seated Dumbbell Shoulder Press has an out-of-range sets value (3010).",
+        "Glute Bridge has an out-of-range sets value (3012).",
+        "Plank has an out-of-range sets value (3001).",
+        "Bodyweight Squat has an out-of-range sets value (3012).",
+        "Incline Push-Up has an out-of-range sets value (3010).",
+        "Bird Dog has an out-of-range sets value (3010)."
+      ],
+      "latencyMs": 20373.03
+    }
   },
   {
     "id": "P19",
     "description": "Intermediate endurance with high-impact restriction",
     "prediction": {
-      "category": "Strength",
-      "confidence": 0.3465
+      "predictedWorkoutType": "Strength",
+      "confidence": 0.3283,
+      "probabilities": {
+        "Cardio": 0.2015,
+        "HIIT": 0.2226,
+        "Strength": 0.3283,
+        "Yoga": 0.2476
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1",
+      "disclaimer": "This prototype predicts the workout category observed in the dataset. It is not medical advice and must not be represented as a clinically validated prescription."
     },
-    "error": "compare: {\"error\":\"429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 3.408240416s.\"}"
+    "ruleBased": {
+      "valid": true,
+      "score": 100,
+      "checksPassed": 195,
+      "totalChecks": 195,
+      "violations": [],
+      "latencyMs": 0.16
+    },
+    "gemini": {
+      "valid": false,
+      "score": 94.12,
+      "checksPassed": 176,
+      "totalChecks": 187,
+      "violations": [
+        "Bodyweight Squat has an out-of-range sets value (3015).",
+        "Incline Push-Up has an out-of-range sets value (3012).",
+        "Glute Bridge has an out-of-range sets value (3015).",
+        "Bodyweight Squat has an out-of-range sets value (3015).",
+        "Glute Bridge has an out-of-range sets value (3015).",
+        "Bird Dog has an out-of-range sets value (3010).",
+        "Incline Push-Up has an out-of-range sets value (4012).",
+        "Mountain Climbers has an out-of-range sets value (3020).",
+        "Bodyweight Squat has an out-of-range sets value (3015).",
+        "Incline Push-Up has an out-of-range sets value (3012).",
+        "Glute Bridge has an out-of-range sets value (3015)."
+      ],
+      "latencyMs": 25508.49
+    }
   },
   {
     "id": "P20",
     "description": "Advanced general fitness, full gym plus cardio",
     "prediction": {
-      "category": "Yoga",
-      "confidence": 0.3282
+      "predictedWorkoutType": "Yoga",
+      "confidence": 0.3317,
+      "probabilities": {
+        "Cardio": 0.1836,
+        "HIIT": 0.262,
+        "Strength": 0.2227,
+        "Yoga": 0.3317
+      },
+      "modelName": "Logistic Regression",
+      "modelVersion": "prototype-0.1.0",
+      "featureProfile": "new_member_safe_v1"
     },
-    "error": "compare: {\"error\":\"429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 54.594631414s.\"}"
+    "ruleBased": {
+      "valid": true,
+      "score": 100,
+      "checksPassed": 171,
+      "totalChecks": 171,
+      "violations": [],
+      "latencyMs": 0.15
+    },
+    "gemini": {
+      "valid": false,
+      "score": 99.41,
+      "checksPassed": 168,
+      "totalChecks": 169,
+      "violations": [
+        "Bird Dog has an out-of-range sets value (30)."
+      ],
+      "latencyMs": 21693.64
+    }
   }
 ]

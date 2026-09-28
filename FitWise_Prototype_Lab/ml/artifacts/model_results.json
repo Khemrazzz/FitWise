@@ -44,14 +44,14 @@
       "best_params": {
         "C": 0.1
       },
-      "cv_macro_f1_mean": 0.2809,
-      "cv_macro_f1_std": 0.0265,
-      "test_accuracy": 0.241,
-      "test_macro_precision": 0.2269,
-      "test_macro_recall": 0.2332,
-      "test_macro_f1": 0.2185,
+      "cv_macro_f1_mean": 0.2836,
+      "cv_macro_f1_std": 0.0336,
+      "test_accuracy": 0.2359,
+      "test_macro_precision": 0.2214,
+      "test_macro_recall": 0.2292,
+      "test_macro_f1": 0.2219,
       "candidates_evaluated": 4,
-      "tuning_seconds": 14.068
+      "tuning_seconds": 8.692
     },
     {
       "model": "Decision Tree",
@@ -69,17 +69,17 @@
         ]
       },
       "best_params": {
-        "max_depth": 7,
-        "min_samples_leaf": 5
+        "max_depth": null,
+        "min_samples_leaf": 1
       },
-      "cv_macro_f1_mean": 0.2378,
-      "cv_macro_f1_std": 0.0385,
-      "test_accuracy": 0.2308,
-      "test_macro_precision": 0.2225,
-      "test_macro_recall": 0.2278,
-      "test_macro_f1": 0.2075,
+      "cv_macro_f1_mean": 0.2581,
+      "cv_macro_f1_std": 0.0378,
+      "test_accuracy": 0.1949,
+      "test_macro_precision": 0.1943,
+      "test_macro_recall": 0.1937,
+      "test_macro_f1": 0.1932,
       "candidates_evaluated": 12,
-      "tuning_seconds": 0.59
+      "tuning_seconds": 0.458
     },
     {
       "model": "Random Forest",
@@ -110,7 +110,7 @@
       "test_macro_recall": 0.2144,
       "test_macro_f1": 0.216,
       "candidates_evaluated": 12,
-      "tuning_seconds": 28.663
+      "tuning_seconds": 21.242
     },
     {
       "model": "Support Vector Machine",
@@ -136,7 +136,7 @@
       "test_macro_recall": 0.2222,
       "test_macro_f1": 0.2217,
       "candidates_evaluated": 6,
-      "tuning_seconds": 2.549
+      "tuning_seconds": 2.669
     },
     {
       "model": "Gradient Boosting",
@@ -167,45 +167,45 @@
       "test_macro_recall": 0.1823,
       "test_macro_f1": 0.1643,
       "candidates_evaluated": 12,
-      "tuning_seconds": 16.634
+      "tuning_seconds": 21.265
     }
   ],
   "classification_report": {
     "Cardio": {
-      "precision": 0.25333333333333335,
-      "recall": 0.37254901960784315,
-      "f1-score": 0.30158730158730157,
+      "precision": 0.2571428571428571,
+      "recall": 0.35294117647058826,
+      "f1-score": 0.2975206611570248,
       "support": 51.0
     },
     "HIIT": {
-      "precision": 0.2,
-      "recall": 0.06818181818181818,
-      "f1-score": 0.1016949152542373,
+      "precision": 0.14285714285714285,
+      "recall": 0.09090909090909091,
+      "f1-score": 0.1111111111111111,
       "support": 44.0
     },
     "Strength": {
-      "precision": 0.29508196721311475,
-      "recall": 0.34615384615384615,
-      "f1-score": 0.3185840707964602,
+      "precision": 0.3333333333333333,
+      "recall": 0.3269230769230769,
+      "f1-score": 0.3300970873786408,
       "support": 52.0
     },
     "Yoga": {
-      "precision": 0.1590909090909091,
+      "precision": 0.15217391304347827,
       "recall": 0.14583333333333334,
-      "f1-score": 0.15217391304347827,
+      "f1-score": 0.14893617021276595,
       "support": 48.0
     },
-    "accuracy": 0.24102564102564103,
+    "accuracy": 0.2358974358974359,
     "macro avg": {
-      "precision": 0.2268765524093393,
-      "recall": 0.23317950431921022,
-      "f1-score": 0.21851005017036934,
+      "precision": 0.2213768115942029,
+      "recall": 0.22915166940902235,
+      "f1-score": 0.22191625746488566,
       "support": 195.0
     },
     "weighted avg": {
-      "precision": 0.22923397913561847,
-      "recall": 0.24102564102564103,
-      "f1-score": 0.22423717004944468,
+      "precision": 0.2258342623560015,
+      "recall": 0.2358974358974359,
+      "f1-score": 0.22757142216307302,
       "support": 195.0
     }
   },
@@ -217,27 +217,27 @@
   ],
   "confusion_matrix": [
     [
-      19,
-      2,
-      14,
-      16
+      18,
+      5,
+      10,
+      18
     ],
     [
       17,
-      3,
-      12,
+      4,
+      11,
       12
     ],
     [
-      20,
-      5,
       18,
+      8,
+      17,
       9
     ],
     [
-      19,
-      5,
       17,
+      11,
+      13,
       7
     ]
   ],
